@@ -1,0 +1,15 @@
+allprojects {
+  group 'greetingbot'
+  version '1.0'
+}
+
+
+subprojects {
+  ext {
+    distribDir = "${projectDir}/../.distr"
+  }
+
+  repositories {
+    mavenCentral()
+  }
+}
